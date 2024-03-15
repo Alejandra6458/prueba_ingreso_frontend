@@ -1,0 +1,63 @@
+@import '../../styles.sass'
+
+.footer
+    padding: $padiing-movil,
+    background: $color-gris,
+    .footer__logo
+        width:180px,
+        margin: 10% 0,
+    .footer_items
+        list-style: none
+        padding: 5% 0,
+        li
+            font-weight: $negrita,
+            padding: 1% 5%,
+            font-size: 18px,
+            line-height: 21.09px,
+            ul
+                list-style: none
+                li
+                    font-weight: $regular,
+                    font-size: 16px,
+                    line-height: 18.75px,
+        .footer__redes--movil
+            img
+                width: 50px,
+                margin-right: 10px,
+        .footer__redes--escritorio
+            display: none,
+
+.texto
+    padding: $padiing-movil,
+    background: $color-gris-claro,
+    color: $color-negro,
+    font-size: 14px,
+    line-height: 16.41px,
+
+@media(min-width: 992px)
+    .footer
+        padding: $padding-escritorio,
+        display: flex,
+        justify-content: space-between,
+        .footer__logo
+            width:299px,
+        .footer_items
+            padding: 3% 0,
+            display: flex,
+            width: 70%,
+            justify-content: space-evenly,
+            .footer__redes--escritorio
+                display: block,
+                font-weight: $negrita !important,
+                margin-top: 20px, 
+                img
+                    width: 50px,
+                    margin-right: 10px,
+            .footer__redes--movil
+                display: none,
+            li
+                ul
+                    li
+                        padding: 5px 0,
+    .texto
+        padding: $padding-escritorio,

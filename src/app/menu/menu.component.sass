@@ -1,0 +1,68 @@
+@import '../../styles.sass'
+
+.menu
+    display: flex,
+    justify-content: space-between,
+    align-items: center,
+    padding: $padiing-movil,
+    .menu__icono
+        width: 24px,
+    .menu__logo
+        width: 103px,
+    .menu__leng
+        width: 18px,
+    .menu__items
+        margin: 0px,
+        position: fixed,
+        top: 40px,
+        left: 100%,
+        list-style: none,
+        width: 90%,
+        height: 100%,
+        background: $color-blanco,
+        padding: $padiing-movil,
+        transition: .2s
+        li
+            padding: 5% 0,
+            border-bottom: 1px solid #B2B2C1,
+            font-size: 20px,
+        .menu__items--information
+            border-bottom: none,
+            ul
+                list-style: none,
+                li
+                    padding: 3% 0,
+                    border-bottom: none,
+                    transition: .2s,
+                    opacity: 0,
+                    font-size: $radius,
+    .menu__items--visible
+        left: 0 !important,
+
+.negrita
+    font-weight: $negrita,
+
+.ocultar
+    display: none,
+
+.mostrar li
+    opacity: 1 !important,
+
+@media(min-width: 992px)
+    .menu
+        padding: $padding-escritorio,
+        .menu__icono
+            display: none,
+        .menu__logo
+            width: 154px,
+        .menu__items
+            position: initial,
+            padding: 0,
+            li
+                border: none,
+                float: left,
+                padding: 0 0 0 3%,
+                font-size: $radius,
+        .menu__items--information
+            ul
+                display: none

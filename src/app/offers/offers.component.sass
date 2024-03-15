@@ -1,0 +1,57 @@
+@import '../../styles.sass'
+
+.ofertas
+    padding: $padiing-movil,
+    color: $color-blanco,
+    .ofertas__titulo
+        color: $color-negro,
+        font-weight: $negrita,
+        font-size: 28px,
+        line-height: 32.81px,
+    .ofertas__oferta--chicago1
+        background: url('../../assets/img/chicago1.svg'),
+    .ofertas__oferta--chicago2
+        background: url('../../assets/img/chicago2.svg'),
+    .ofertas__oferta--porto
+        background: url('../../assets/img/porto.svg'),
+    .ofertas__oferta--chicago1, .ofertas__oferta--chicago2, .ofertas__oferta--porto
+        width: 100%,
+        height: 258px,
+        border-radius: $radius,
+        background-size: cover,
+        display: flex,
+        flex-direction: column,
+        justify-content: flex-end,
+        align-items: flex-end,
+        margin-bottom:5%,
+        position: relative,
+        .oferta__sombra
+            width: 100%,
+            height:100%,
+            position: absolute,
+            z-index: 0,
+            border-radius: $radius,
+        h4, p
+            font-weight: $negrita,
+            margin: 0 20px 10px 0,
+            z-index: 1,
+        h4
+            font-size: 28px,
+            line-height: 32.81px,
+        p
+            font-size: 20px,
+            line-height: 23.44px,
+
+@media(min-width: 992px)
+    .ofertas
+        padding: $padding-escritorio,
+        .ofertas__cont
+            display: flex,
+            justify-content: space-between,
+            .ofertas__oferta--chicago1, .ofertas__oferta--chicago2
+                width: 24%,
+                margin-bottom:0,
+            .ofertas__oferta--porto
+                width: 50%,
+                margin-bottom:0,
+            

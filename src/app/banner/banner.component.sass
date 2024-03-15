@@ -1,0 +1,45 @@
+@import '../../styles.sass'
+
+.banner
+    padding: $padiing-movil,
+    background: url('../../assets/img/banner.svg'),
+    background-position-y: 20%,
+    background-position-x: 40%,
+    .banner__cont
+        color: $color-blanco,
+        padding: 50% 0,
+        .banner__titulo
+            font-size: 32px,
+            line-height: 37.5px,
+            font-weight: $negrita,
+            margin:0 0 10px 0,
+        .banner__texto
+            font-size:14px,
+            line-height: 16.41px,
+            margin:0 0 20px 0
+        .banner__button
+            color: $color-blanco,
+            font-size: 18px,
+            line-height: 21.09px,
+            background-color: $color-rojo,
+            border-style: none,
+            border-radius: 100px,
+            width: 152px,
+            text-align: center,
+            padding: 8px 0,
+
+@media(min-width: 992px)
+    .banner
+        padding: $padding-escritorio,
+        .banner__cont
+            padding: 10% 0,
+            .banner__titulo
+                font-size: 58px,
+                line-height: 67.97px,
+            .banner__texto
+                font-size:20px,
+                line-height: 23.44px,
+                width: 40%,
+            .banner__button
+                font-size: $radius,
+                line-height: 18.57px,

@@ -1,0 +1,46 @@
+@import '../../styles.sass'
+
+.banner
+    padding: $padiing-movil,
+    .banner__fondo
+        border-radius: $radius,
+        background: linear-gradient(180deg, #181823 39.26%, #537FE7 100%),
+        .banner__img
+            border-radius: $radius,
+            background: url('../../assets/img/banner2.svg'),
+            background-size: cover,
+            background-position-y: 80%,
+            background-position-x: 80%,
+            padding: 70% 0 0 0,
+            border-bottom-right-radius: 100%,
+            border-bottom-left-radius: 100%,
+        .banner__cont
+            color: $color-blanco,
+            padding: 5% 5% 20% 5%,
+            h3, h4
+                font-size: 24px,
+                line-height: 39.84px,
+                font-weight: $negrita,
+                margin: 0,
+            h4
+                color: $color-azul,
+            p
+                font-size: 18px,
+                line-height: 21.09px,
+                margin:0,
+
+@media(min-width: 992px)
+    .banner
+        padding: $padding-escritorio,
+        .banner__fondo
+            display: flex,
+            .banner__img
+                padding: 15%,
+                border-bottom-right-radius: 100%,
+                border-top-right-radius: 100%,
+                border-bottom-left-radius: 16px,
+            .banner__cont
+                padding: 10% 5%,
+                h3, h4
+                    font-size: 40px,
+                    line-height: 46.88px,

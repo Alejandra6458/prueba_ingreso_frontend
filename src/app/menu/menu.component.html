@@ -1,0 +1,20 @@
+<div class="menu">
+    <!-- icono movil -->
+    <img (click)="menuToggle()" class="menu__icono" src="../../assets/img/menu.svg" alt="Icono menu">
+    <!-- icono movil -->
+    <img class="menu__logo" src="../../assets/img/logo.svg" alt="Logo AIRLINE">
+    <ul [ngClass]="{'menu__items--visible': menuVisible}" class="menu__items">
+        <li [ngClass]="{'ocultar': informationVisible}">Check-in</li>
+        <li [ngClass]="{'ocultar': informationVisible}">Manage my booking</li>
+        <li (click)="informationToggle()" class="menu__items--information">
+            <span [ngClass]="{'negrita': informationVisible}">Information</span>
+            <ul [ngClass]="{'mostrar': informationVisible}">
+                <li>Help center</li>
+                <li>Flight state</li>
+                <li>Airplanes</li>
+                <li>Routes</li>
+            </ul>
+        </li>
+    </ul>
+    <img class="menu__leng" src="../../assets/img/lenguaje.svg" alt="Icono lenguaje">
+</div>
